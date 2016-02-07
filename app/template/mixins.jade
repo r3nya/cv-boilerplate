@@ -1,0 +1,11 @@
+mixin skill-item(title, skills)
+    li
+        h4= title
+        if skills
+            each skill in skills
+                p= skill
+
+mixin responsibilities(items)
+    ul
+        each item in items
+            li= item
